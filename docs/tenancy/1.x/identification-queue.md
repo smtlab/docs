@@ -87,7 +87,7 @@ class MailCustomer implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     /** @var Customer $customer */
-    public $tenant;
+    public $customer;
 
     public function __construct(Customer $customer, $tenant_key = null, string $tenant_identifier = null)
     {
